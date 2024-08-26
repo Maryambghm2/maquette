@@ -1,0 +1,405 @@
+:root {
+    font-family: Arial, sans-serif;
+    color: black;
+    margin: auto;
+    background-color:  #ffffff;
+    padding: 0;
+    width:  auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER  */
+
+#sort {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.navigbar {
+    padding-top: 20px;
+    padding-right: 10px;
+    margin-right: 30px;
+}
+
+#logo {
+    width: 60px;
+    margin-left: 30px;
+}
+
+nav a {
+    margin-right: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.picture {
+    width: 12px;
+    margin-right: 24px;
+}
+
+/* FIN HEADER  */
+
+button {
+    background-color: white;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+/* SECTION 1 */
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 150px
+}
+
+.partie_gauche {
+    padding-right: 50px;
+}
+
+.partie_gauche h1 {
+    font-size: 35px;
+}
+
+span {
+    color: orangered
+}
+
+#btn_un {
+    margin-left: 420px;
+}
+
+.partie_droite {
+    padding-right: 18px;
+}
+
+.partie_droite img {
+    width: 300px;
+}
+
+/* FIN SECTION 1  */
+
+/* SECTION 2  */
+.section2 {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+
+.section2 h3 {
+    display: flex;
+    gap: 25px;
+    font-weight: normal;
+    padding-left: 34px;
+
+}
+
+/* COL 1 */
+#arrow_green {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 15px solid transparent;
+    border-right: 26px solid rgb(133, 236, 133);
+    border-bottom: 15px solid transparent;
+
+}
+
+
+
+/* COL 2 */
+#arrow_yellow {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 26px solid yellow;
+    border-left: 15px solid transparent;
+}
+
+
+
+/* COL 3 */
+#arrow_orange {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 26px solid orangered;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+
+/* FIN SECTION 2 */
+
+/* SECTION 3  */
+
+.section3 h1 {
+    padding-top: 100px;
+    padding-left: 30px;
+    font-size: 35px;
+}
+
+/* FIN SECTION 3 */
+
+/* SECTION 4  */
+
+#logobis {
+    width: 250px;
+    margin-right: 20px;
+}
+
+.section4 {
+    padding-top: 50px;
+    /* padding-left: 20px; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FIN SECTION 4 */
+
+
+/* SECTION 5  */
+
+.section5 {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.titles_stats {
+    font-size: 70px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px black;
+    border: 1px black;
+
+}
+
+
+#chiffre4 {
+    color: lightgreen;
+}
+
+#chiffre1 {
+    color: rgb(238, 238, 57);
+}
+
+#chiffre100 {
+    color: orangered;
+}
+
+/* FIN SECTION 5 */
+
+/* LINE  */
+#line {
+    border: 0;
+    border-top: 1px solid #ccc;
+    /* Light grey line */
+    margin: 20px 0;
+    /* Space above and below the line */
+}
+
+/* FOOTER  */
+
+#bold {
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+.footer_content {
+    padding-left: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 20px;
+    gap: 50px;
+}
+
+.copyright {
+    text-align: right;
+    flex-grow: 1;
+    padding-right: 100px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    body,
+    html {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* HEADER  */
+    #sort {
+        display: flex;
+        transform: rotateY(180deg);
+        width: 80px;
+        margin-right: 18px;
+    }
+
+    #logo {
+        margin: 20px;
+        padding: 0;
+        width: 80px;
+    }
+
+    .navigbar {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* FIN HEADER  */
+
+    /* SECTION 1  */
+    .section1 {
+        flex-direction: column;
+        align-content: center;
+        padding-top: 50px;
+        padding-right: 0;
+        padding-left: 20px;
+        justify-content: center;
+        width: 510px;
+
+    }
+
+    .section1 img {
+        display: none;
+    }
+
+    #btn_un {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+    /* FIN SECTION 1 */
+
+
+    /* SECTION 2  */
+    .section2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+    }
+
+    /* FIN SECTION 2 */
+
+
+
+    /* SECTION 4  */
+
+    .section4 {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .texte {
+        justify-content: space-around;
+        text-align: left;
+        margin: 10px 5px;
+        padding: 0;
+        align-items: center;
+    }
+
+    /* FIN SECTION 4 */
+
+
+    /* SECTION 5  */
+    .section5 {
+        flex-direction: column;
+    }
+
+    /* FIN SECTION 5 */
+
+    /* FOOTER  */
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align:left;
+        padding-left: 0;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .copyright{
+        padding: 0;
+        margin-left: 25px;
+        text-align: left;
+
+    }
+    #line {
+        display: none;
+    }
+}
